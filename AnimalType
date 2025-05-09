@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class AnimalType {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String animalName = scanner.nextLine();
+
+        String animalClass;
+        switch (animalName.toLowerCase()) {
+            case "dog":
+            case "cat":
+            case "elephant":
+                animalClass = "mammal";
+                break;
+            case "crocodile":
+            case "tortoise":
+            case "snake":
+            case "lizard":
+                animalClass = "reptile";
+                break;
+            default:
+                animalClass = "unknown";
+        }
+
+        System.out.println(animalClass);
+    }
+}
